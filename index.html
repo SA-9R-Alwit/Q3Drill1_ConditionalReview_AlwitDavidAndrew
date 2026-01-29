@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Average Finder</title>
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h2 id="gFonts">Simple Average Finder</h2>
+
+    <p id="gFonts">Score 1:</p>
+    <input id="score1" type="text">
+
+    <p id="gFonts">Score 2:</p>
+    <input id="score2" type="text">
+
+    <button py-click="compute_average" id="gFonts">Compute</button>
+
+    <p id="gFonts">Average: <span id="average"></span></p>
+    <p id="gFonts">Result: <span id="result"></span></p>
+
+    <!-- Connect to external Python file -->
+    <script type="py" src="main.py"></script>
+</body>
+</html>
